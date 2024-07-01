@@ -5,6 +5,7 @@ package edu.kis.vh.nursery;
  */
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
+
     // Temporary rhymer used for implementing FIFO behavior
     public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
     /**
@@ -15,6 +16,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
     @Override
     public int countOut() {
         // Move all elements from the main rhymer to the temp rhymer
+
         while (!callCheck())
 
             temp.countIn(super.countOut());
