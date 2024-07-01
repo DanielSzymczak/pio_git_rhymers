@@ -12,19 +12,20 @@ public class DefaultCountingOutRhymer {
             numbers[++total] = in;
     }
 
-    public boolean callCheck() {
+   public boolean callCheck() {
         return total == EMPTY;
-    }
+   }
 
-    public boolean isFull() {
+   public boolean isFull() {
+
         return total == SIZE-1;
-    }
+   }
 
-    protected int peekaboo() {
+   final protected int peekaboo() {
         if (callCheck())
             return EMPTY;
         return numbers[total];
-    }
+   }
 
     public int countOut() {
         if (callCheck())
