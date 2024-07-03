@@ -7,7 +7,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
 
     // Temporary rhymer used for implementing FIFO behavior
-    public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
     /**
      * Overrides the countOut method to provide FIFO behavior.
      *
